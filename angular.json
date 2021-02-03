@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngSi22021"
+    }
+  },
+  "defaultProject": "ngSi22021",
+  "cli": {
+    "analytics": false
+  }
 }
