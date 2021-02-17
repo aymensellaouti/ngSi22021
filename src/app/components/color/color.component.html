@@ -1,0 +1,22 @@
+<p>color works!</p>
+
+<div
+  [style.backgroundColor]="color"
+>
+  Bonjour SI2
+</div>
+
+<input
+  (change)="changeColor(colorInput.value)"
+  #colorInput
+  type="text" class="form-control">
+
+  <input
+    [(ngModel)]="color"
+  type="color" class="form-control">
+
+<button
+  (click)="changeColor(defaultColor)"
+  class="btn btn-primary">
+  reset color
+</button>
