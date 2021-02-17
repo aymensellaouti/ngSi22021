@@ -12,7 +12,8 @@ export class FirstComponent implements OnInit {
   */
   source: string;
   isHidden = false;
-  color = 'darkblue';
+  inputContent = '';
+  private _color = 'darkblue';
   message = 'Bonjour je suis le message contenu dans le ts';
   constructor() {}
 
@@ -24,5 +25,17 @@ export class FirstComponent implements OnInit {
     this.isHidden = !this.isHidden;
     console.log(this.isHidden);
     this.color = 'red';
+  }
+
+  get color() {
+    return this._color;
+  }
+
+  set color(newColor: string) {
+    this._color = newColor;
+  }
+
+  showInputContent(element) {
+    this.inputContent = element;
   }
 }

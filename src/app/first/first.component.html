@@ -7,6 +7,10 @@
 <button (mouseenter)="afficherCacher()" class="btn btn-primary">
   afficher/cacher
 </button>
+<input type="text" #monInput>
+<div (click)="showInputContent(monInput.value)">
+  le contenu de l'input est : {{inputContent}}
+</div>
 <!-- img(alt, src) {} -->
 
 <!-- attributs -->
