@@ -1,0 +1,15 @@
+<p>pere works!</p>
+
+<app-fils [myFavoriteColor]="'green'"></app-fils>
+<app-fils [myFavoriteColor]="'yellow'"></app-fils>
+<app-fils
+  (sendDataToDad)="recieveDataFromSon($event)"
+  [message]="messageToFiston"></app-fils>
+
+
+<!--
+  f() {
+    x = 5:
+    g(x);
+  }
+ -->
