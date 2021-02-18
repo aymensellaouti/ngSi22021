@@ -12,6 +12,7 @@ import { TwoComponent } from './components/two/two.component';
 import { CardComponent } from './components/card/card.component';
 import { PereComponent } from './component/pere/pere.component';
 import { FilsComponent } from './component/fils/fils.component';
+import { CvComponent } from './cv/cv/cv.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FilsComponent } from './component/fils/fils.component';
     TwoComponent,
     CardComponent,
     PereComponent,
-    FilsComponent
+    FilsComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
