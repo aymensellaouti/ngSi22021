@@ -13,6 +13,7 @@ import { CardComponent } from './components/card/card.component';
 import { PereComponent } from './component/pere/pere.component';
 import { FilsComponent } from './component/fils/fils.component';
 import { CvComponent } from './cv/cv/cv.component';
+import { ListComponent } from './cv/list/list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CvComponent } from './cv/cv/cv.component';
     CardComponent,
     PereComponent,
     FilsComponent,
-    CvComponent
+    CvComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
