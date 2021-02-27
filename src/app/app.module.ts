@@ -14,6 +14,8 @@ import { PereComponent } from './component/pere/pere.component';
 import { FilsComponent } from './component/fils/fils.component';
 import { CvComponent } from './cv/cv/cv.component';
 import { ListComponent } from './cv/list/list.component';
+import { DetailComponent } from './cv/detail/detail.component';
+import { ItemComponent } from './cv/item/item.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ListComponent } from './cv/list/list.component';
     PereComponent,
     FilsComponent,
     CvComponent,
-    ListComponent
+    ListComponent,
+    DetailComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
