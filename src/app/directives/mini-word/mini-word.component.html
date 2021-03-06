@@ -1,0 +1,28 @@
+<p
+  [ngStyle]="{
+    color: color,
+    fontFamily: font,
+    fontSize: size + 'px'
+  }"
+>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure totam,
+  reiciendis necessitatibus cum quis nobis sapiente quia illum delectus earum.
+  Explicabo, temporibus animi ad cupiditate totam perspiciatis doloremque
+  ducimus.
+</p>
+
+<div class="row">
+  <div class="col">
+    <input type="color" [(ngModel)]="color" class="form-control" />
+  </div>
+  <div class="col">
+    <input [(ngModel)]="size" type="number" class="form-control" />
+  </div>
+  <div class="col">
+    <select [(ngModel)]="font" class="form-control">
+      <option value="garamond">Garamond</option>
+      <option value="verdana">Verdana</option>
+      <option value="arial">Arial</option>
+    </select>
+  </div>
+</div>
