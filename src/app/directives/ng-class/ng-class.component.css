@@ -1,0 +1,10 @@
+.lampe {
+  background-color: yellow;
+  border: black solid 2px;
+}
+
+.eteinte {
+  background-color: black;
+  color: white;
+  border: black solid 2px;
+}

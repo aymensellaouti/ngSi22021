@@ -1,0 +1,22 @@
+<p
+  [ngClass]="{
+    lampe: isAllume,
+    eteinte: !isAllume
+  }"
+>
+  ng-class works!
+</p>
+
+<p appHighlight>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius unde sapiente
+  aspernatur repudiandae quaerat! Quae accusantium velit reprehenderit
+  laboriosam nihil magnam, vero, earum corrupti eos labore quo ratione? Dolorem,
+  porro?
+</p>
+
+<div appHighlight [in]="'gold'" [out]="'silver'">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laboriosam
+  nulla blanditiis fugiat quaerat, reiciendis quidem quibusdam in eius deleniti
+  iure reprehenderit error? Perferendis, atque animi modi asperiores illo
+  eveniet!
+</div>

@@ -18,6 +18,8 @@ import { DetailComponent } from './cv/detail/detail.component';
 import { ItemComponent } from './cv/item/item.component';
 import { NgStyleComponent } from './directives/ng-style/ng-style.component';
 import { MiniWordComponent } from './directives/mini-word/mini-word.component';
+import { NgClassComponent } from './directives/ng-class/ng-class.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { MiniWordComponent } from './directives/mini-word/mini-word.component';
     DetailComponent,
     ItemComponent,
     NgStyleComponent,
-    MiniWordComponent
+    MiniWordComponent,
+    NgClassComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
