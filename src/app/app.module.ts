@@ -23,6 +23,9 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { TestngifComponent } from './directives/testngif/testngif.component';
 import { TestngforComponent } from './directives/testngfor/testngfor.component';
+import { RandomAgePipe } from './pipes/random-age.pipe';
+import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
+import { LoggerService } from './services/logger.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,9 @@ import { TestngforComponent } from './directives/testngfor/testngfor.component';
     HighlightDirective,
     RainbowDirective,
     TestngifComponent,
-    TestngforComponent
+    TestngforComponent,
+    RandomAgePipe,
+    DefaultImagePipe
   ],
   imports: [
     BrowserModule,

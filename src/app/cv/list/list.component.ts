@@ -14,18 +14,19 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
     this.cvs = [
       new Cv(1, 'sellaouti', 'aymen', 'teacher', 'as.jpg', 123456, 38),
+      new Cv(2, 'Hammami', 'Khouloud', 'ingénieur', '    ', 123456, 21),
       new Cv(
-        2,
-        'Hammami',
-        'Khouloud',
+        3,
+        'Bakhouche',
+        'Yasser',
         'ingénieur',
-        'rotating_card_profile.png',
+        '',
         123456,
         21
       ),
     ];
   }
   forwardCv(selectedCv: Cv) {
-   this.forwardSelectedCv.emit(selectedCv);
+    this.forwardSelectedCv.emit(selectedCv);
   }
 }

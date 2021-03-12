@@ -3,8 +3,8 @@
     class="rounded-circle"
     width="50px"
     height="50px"
-    src="assets/images/{{ cv.path }}"
+    src="assets/images/{{ cv.path | defaultImage }}"
     alt="{{ cv.name }}"
   />
-  {{ cv.firstname }} {{ cv.name }}
+  {{ cv.firstname | titlecase }} {{ cv.name | uppercase }}
 </div>
