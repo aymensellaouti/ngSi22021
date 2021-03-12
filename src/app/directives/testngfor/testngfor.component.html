@@ -1,0 +1,10 @@
+<p>testngfor works!</p>
+
+<ol>
+  <li
+    [ngClass]="{ pair: isOdd, impair: !isOdd }"
+    *ngFor="let serie of series; let isOdd = odd"
+  >
+    {{ serie.name }} : {{ serie.type }}
+  </li>
+</ol>

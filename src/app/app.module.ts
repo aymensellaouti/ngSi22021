@@ -21,6 +21,8 @@ import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { NgClassComponent } from './directives/ng-class/ng-class.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
+import { TestngifComponent } from './directives/testngif/testngif.component';
+import { TestngforComponent } from './directives/testngfor/testngfor.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { RainbowDirective } from './directives/rainbow.directive';
     MiniWordComponent,
     NgClassComponent,
     HighlightDirective,
-    RainbowDirective
+    RainbowDirective,
+    TestngifComponent,
+    TestngforComponent
   ],
   imports: [
     BrowserModule,
