@@ -26,6 +26,7 @@ import { TestngforComponent } from './directives/testngfor/testngfor.component';
 import { RandomAgePipe } from './pipes/random-age.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 import { LoggerService } from './services/logger.service';
+import { TodoComponent } from './todo/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { LoggerService } from './services/logger.service';
     TestngifComponent,
     TestngforComponent,
     RandomAgePipe,
-    DefaultImagePipe
+    DefaultImagePipe,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
