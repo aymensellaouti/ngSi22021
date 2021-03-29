@@ -1,13 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
+
+import { ToastrModule } from 'ngx-toastr';
+
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 import { ThirdComponent } from './third/third.component';
 import { ColorComponent } from './components/color/color.component';
-import { FormsModule } from '@angular/forms';
 import { TwoComponent } from './components/two/two.component';
 import { CardComponent } from './components/card/card.component';
 import { PereComponent } from './component/pere/pere.component';
@@ -25,8 +29,8 @@ import { TestngifComponent } from './directives/testngif/testngif.component';
 import { TestngforComponent } from './directives/testngfor/testngfor.component';
 import { RandomAgePipe } from './pipes/random-age.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
-import { LoggerService } from './services/logger.service';
 import { TodoComponent } from './todo/todo/todo.component';
+
 
 @NgModule({
   declarations: [
@@ -57,7 +61,9 @@ import { TodoComponent } from './todo/todo/todo.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

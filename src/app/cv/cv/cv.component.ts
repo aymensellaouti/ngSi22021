@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Cv } from '../model/cv';
 import { LoggerService } from '../../services/logger.service';
 import { HelperService } from '../../services/helper.service';
+import { TodoService } from '../../todo/services/todo.service';
 
 @Component({
   selector: 'app-cv',
@@ -13,7 +14,8 @@ export class CvComponent implements OnInit {
   date = new Date();
   constructor(
     private loggerService: LoggerService,
-    private helperService: HelperService
+    private helperService: HelperService,
+    private TodoService: TodoService
   ) {}
 
   ngOnInit(): void {
@@ -23,5 +25,6 @@ export class CvComponent implements OnInit {
 
   findSelectedCv(selectedCv: Cv) {
     this.selectedCv = selectedCv;
+    this.TodoService.logger();
   }
 }
