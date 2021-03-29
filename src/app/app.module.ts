@@ -30,6 +30,7 @@ import { TestngforComponent } from './directives/testngfor/testngfor.component';
 import { RandomAgePipe } from './pipes/random-age.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 import { TodoComponent } from './todo/todo/todo.component';
+import { EmbaucheComponent } from './cv/embauche/embauche.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { TodoComponent } from './todo/todo/todo.component';
     TestngforComponent,
     RandomAgePipe,
     DefaultImagePipe,
-    TodoComponent
+    TodoComponent,
+    EmbaucheComponent
   ],
   imports: [
     BrowserModule,
