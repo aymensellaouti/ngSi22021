@@ -34,6 +34,7 @@ import { EmbaucheComponent } from './cv/embauche/embauche.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ChiffreCacheComponent } from './components/chiffre-cache/chiffre-cache.component';
+import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { ChiffreCacheComponent } from './components/chiffre-cache/chiffre-cache.
     EmbaucheComponent,
     HeaderComponent,
     LoginComponent,
-    ChiffreCacheComponent
+    ChiffreCacheComponent,
+    DetailsCvComponent
   ],
   imports: [
     BrowserModule,
