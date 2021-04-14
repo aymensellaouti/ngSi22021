@@ -5,12 +5,12 @@ import { TodoComponent } from './todo/todo/todo.component';
 import { ColorComponent } from './components/color/color.component';
 import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { FirstComponent } from './first/first.component';
-
+/* color */
 const routes: Routes = [
   { path: '', component: FirstComponent },
   { path: 'cv', component: CvComponent },
   { path: 'todo', component: TodoComponent },
-  { path: 'color', component: ColorComponent },
+  { path: 'color/:couleur', component: ColorComponent },
   { path: 'word', component: MiniWordComponent },
 ];
 
