@@ -31,6 +31,7 @@ import { RandomAgePipe } from './pipes/random-age.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 import { TodoComponent } from './todo/todo/todo.component';
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { EmbaucheComponent } from './cv/embauche/embauche.component';
     RandomAgePipe,
     DefaultImagePipe,
     TodoComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
