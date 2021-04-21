@@ -35,6 +35,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ChiffreCacheComponent } from './components/chiffre-cache/chiffre-cache.component';
 import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
+import { AddPersonneComponent } from './cv/add-personne/add-personne.component';
+import { FrontComponent } from './components/front/front.component';
+import { BackComponent } from './components/back/back.component';
+import { NF404Component } from './pages/nf404/nf404.component';
+import { TestFormComponent } from './components/test-form/test-form.component';
 
 
 @NgModule({
@@ -66,7 +71,12 @@ import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
     HeaderComponent,
     LoginComponent,
     ChiffreCacheComponent,
-    DetailsCvComponent
+    DetailsCvComponent,
+    AddPersonneComponent,
+    FrontComponent,
+    BackComponent,
+    NF404Component,
+    TestFormComponent
   ],
   imports: [
     BrowserModule,
