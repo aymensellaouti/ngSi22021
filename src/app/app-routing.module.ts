@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CvComponent } from './cv/cv/cv.component';
 import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
@@ -10,9 +10,11 @@ import { AddPersonneComponent } from './cv/add-personne/add-personne.component';
 import { FrontComponent } from './components/front/front.component';
 import { BackComponent } from './components/back/back.component';
 import { NF404Component } from './pages/nf404/nf404.component';
+import { LoginComponent } from './pages/login/login.component';
 /* cv/5 */
 const routes: Routes = [
   { path: '', redirectTo: 'cv', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   {
     path: 'cv',
     children: [
