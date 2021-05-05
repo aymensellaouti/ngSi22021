@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -42,6 +43,7 @@ import { NF404Component } from './pages/nf404/nf404.component';
 import { TestFormComponent } from './components/test-form/test-form.component';
 import { TestObservableComponent } from './components/test-observable/test-observable.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { AUTH_INTERCEPTOR } from './interceptors/auth.interceptor';
 
 
 @NgModule({
@@ -88,8 +90,9 @@ import { SliderComponent } from './components/slider/slider.component';
     FormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AUTH_INTERCEPTOR],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

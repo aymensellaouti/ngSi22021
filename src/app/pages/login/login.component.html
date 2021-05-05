@@ -41,7 +41,9 @@
       caractères.
     </div>
   </div>
-  <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary">
+  <button
+    (click)="login(loginForm)"
+    [disabled]="loginForm.invalid" type="submit" class="btn btn-primary">
     Submit
   </button>
 </form>

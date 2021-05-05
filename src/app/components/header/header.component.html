@@ -26,15 +26,25 @@
         <a
           class="nav-link"
           routerLinkActive="active text-primary"
+          [routerLinkActiveOptions]="{ exact: true }"
           [routerLink]="['cv']"
           >Cv</a
         >
       </li>
       <li class="nav-item">
         <a
+         *ngIf="authService.isAuthenticated()"
           class="nav-link"
           routerLinkActive="active text-primary"
-          [routerLink]="['todo']"
+          [routerLink]="['cv/add']"
+          >Add Cv</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLinkActive="active text-primary"
+          [routerLink]="['admin/todo']"
           >Todo</a
         >
       </li>
@@ -56,11 +66,22 @@
       </li>
       <li class="nav-item">
         <a
+          *ngIf="! authService.isAuthenticated()"
           class="nav-link"
           routerLinkActive="active text-primary"
           [routerLink]="['login']"
           >Login</a
         >
+      </li>
+      <li class="nav-item">
+        <a
+        *ngIf="authService.isAuthenticated()"
+          class="nav-link"
+          routerLinkActive="active text-primary"
+          (click)="logout()"
+          >
+          Logout
+          </a>
       </li>
     </ul>
   </div>
